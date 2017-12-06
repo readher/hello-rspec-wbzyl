@@ -46,6 +46,9 @@ control of their code quality by incorporating fully configurable test coverage
 and maintainability data throughout the development workflow.
 
 * [Embedding Status Images](https://docs.codeclimate.com/v1.0/docs/overview#badges).
+* Integration with Travis:
+  - [Configuring Test Coverage](https://docs.codeclimate.com/v1.0/docs/configuring-test-coverage)
+  - [Travis CI Test Coverage Example](https://docs.codeclimate.com/v1.0/docs/travis-ci-test-coverage)
 
 
 ## Beer Song
