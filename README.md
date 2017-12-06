@@ -10,13 +10,13 @@ from [exercism.io](http://exercism.io):
 exercism fetch ruby beer-song
 ```
 
-Download gems to local folder _vendor/bundle_:
+
+## Integration with Travis
+
+Begin with downloading gems to local folder _vendor/bundle_:
 ```sh
 bundle install --path vendor/bundle
 ```
-
-
-## Integration with Travis
 
 * [How to use Travis CI with GitHub hosted repository](https://docs.travis-ci.com/user/getting-started/).
 * [Embedding Status Images](https://docs.travis-ci.com/user/status-images/) –
