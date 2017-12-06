@@ -15,6 +15,8 @@ bundle install --path vendor/bundle
 * [Embedding Status Images](https://docs.travis-ci.com/user/status-images/) –
   also known as badges or icons that show the status of your build into your README or website.
 
+[![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl)
+
 
 ## Beer Song
 
