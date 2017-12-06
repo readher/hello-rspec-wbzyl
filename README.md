@@ -1,8 +1,8 @@
 ## Sample repository for RSpec projects
 
-| Testowanie w Ruby | GitHub Account | Travis CI Status |
-:--:|:--:|:--:
-| [dr Włodzimierz Bzyl](https://github.com/egzamin/tar) | [Włodek Bzyl](https://github.com/wbzyl) | [![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl) |
+| Testowanie w Ruby | GitHub Account | Travis CI Status | CC Maintainability Status | CC Coverage Status |
+:--:|:--:|:--:|:--:|:--:
+| [dr Włodzimierz Bzyl](https://github.com/egzamin/tar) | [Włodek Bzyl](https://github.com/wbzyl) | [![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl) | MS | CS |
 
 This repository contains a solution to exercise „Beer Song” downloaded
 from [exercism.io](http://exercism.io):
@@ -15,9 +15,27 @@ Download gems to local folder _vendor/bundle_:
 bundle install --path vendor/bundle
 ```
 
+
+## Integration with Travis
+
 * [How to use Travis CI with GitHub hosted repository](https://docs.travis-ci.com/user/getting-started/).
 * [Embedding Status Images](https://docs.travis-ci.com/user/status-images/) –
   also known as badges or icons that show the status of your build into your README or website.
+
+
+## Code Coverage with SimpleCov gem
+
+[SimpleCov](https://github.com/colszowka/simplecov) is a code coverage analysis
+tool for Ruby.
+
+Add gem _simplecov_ to [Gemfile](Gemfile) and require and run the gem from
+the top [spec_helper.rb](spec/spec_helper.rb) file:
+```ruby
+require 'simplecov'
+SimpleCov.start
+```
+Now, run tests, open up _coverage/index.html_ in your browser and check out
+code coverage.
 
 
 ## Beer Song
