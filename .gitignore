@@ -1,3 +1,5 @@
+cc-test-reporter
+
 *.gem
 *.rbc
 /.config

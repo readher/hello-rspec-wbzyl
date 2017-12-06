@@ -47,8 +47,12 @@ and maintainability data throughout the development workflow.
 
 * [Embedding Status Images](https://docs.codeclimate.com/v1.0/docs/overview#badges).
 * Integration with Travis:
-  - [Configuring Test Coverage](https://docs.codeclimate.com/v1.0/docs/configuring-test-coverage)
+  - [Configuring Test Coverage](https://docs.codeclimate.com/v1.0/docs/test-reporter)
+  - [Finding Your Test Coverage Token](https://docs.codeclimate.com/v1.0/docs/finding-your-test-coverage-token)
+    ([Dashboard](https://codeclimate.com/dashboard))
   - [Travis CI Test Coverage Example](https://docs.codeclimate.com/v1.0/docs/travis-ci-test-coverage)
+
+
 
 TODO: Use _codeclimate-test-reporter_ gem? To be deprecated soon;
 [Improve Your Code Quality: Tracking Test Coverage with Travis CI and Code Climate](https://blog.travis-ci.com/2013-09-12-improve-your-codes-quality-tracking-test-coverage-with-travis-ci-and-code-climate).
