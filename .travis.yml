@@ -3,6 +3,7 @@ rvm:
   - 2.4.2
 script:
   - bundle exec rspec
+
 env:
   global:
     - CC_TEST_REPORTER_ID=cee68abbc45b6be846b3db276ba4a776d333a4d541a9109fed26bf5c48dd2243
