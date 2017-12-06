@@ -4,7 +4,7 @@
 :--:|:--:|:--:|:--:|:--:
 | [dr Włodzimierz Bzyl](https://github.com/egzamin/tar) | [Włodek Bzyl](https://github.com/wbzyl) | [![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl) | [![Maintainability](https://api.codeclimate.com/v1/badges/1840a08c19747202733f/maintainability)](https://codeclimate.com/github/my-rspec/hello-rspec-wbzyl/maintainability) | [![Test Coverage](https://api.codeclimate.com/v1/badges/1840a08c19747202733f/test_coverage)](https://codeclimate.com/github/my-rspec/hello-rspec-wbzyl/test_coverage) |
 
-This repository contains a solution to exercise „Beer Song” downloaded
+This repository contains a solution to the exercise „Beer Song” downloaded
 from [exercism.io](http://exercism.io):
 ```sh
 exercism fetch ruby beer-song
@@ -45,7 +45,7 @@ code coverage.
 control of their code quality by incorporating fully configurable test coverage
 and maintainability data throughout the development workflow.
 
-* Goto Github repo and in Settings Integration & services add CodeClimate service.
+* In the Github repo select Settings → Integration & services tab add and configure the CodeClimate service.
 * [Embedding Status Images](https://docs.codeclimate.com/v1.0/docs/overview#badges).
 * Integration with Travis:
   - [Configuring Test Coverage](https://docs.codeclimate.com/v1.0/docs/test-reporter)
