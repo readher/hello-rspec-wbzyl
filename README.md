@@ -50,7 +50,8 @@ and maintainability data throughout the development workflow.
   - [Configuring Test Coverage](https://docs.codeclimate.com/v1.0/docs/configuring-test-coverage)
   - [Travis CI Test Coverage Example](https://docs.codeclimate.com/v1.0/docs/travis-ci-test-coverage)
 
-TODO: Use _codeclimate-test-reporter_ gem?
+TODO: Use _codeclimate-test-reporter_ gem? To be deprecated soon;
+[Improve Your Code Quality: Tracking Test Coverage with Travis CI and Code Climate](https://blog.travis-ci.com/2013-09-12-improve-your-codes-quality-tracking-test-coverage-with-travis-ci-and-code-climate).
 
 
 ## Beer Song
