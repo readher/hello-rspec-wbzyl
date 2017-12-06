@@ -28,8 +28,9 @@ bundle install --path vendor/bundle
 [SimpleCov](https://github.com/colszowka/simplecov) is a code coverage analysis
 tool for Ruby.
 
-Add gem _simplecov_ to [Gemfile](Gemfile) and require and run the gem from
-the top [spec_helper.rb](spec/spec_helper.rb) file:
+Add gem _simplecov_ to [Gemfile](Gemfile).
+Next, require and run _Simplecov_ from the top [spec_helper.rb](spec/spec_helper.rb)
+file:
 ```ruby
 require 'simplecov'
 SimpleCov.start
@@ -40,7 +41,8 @@ code coverage.
 
 ## Beer Song
 
-Produce the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.
+Produce the lyrics to that beloved classic, that field-trip favorite:
+99 Bottles of Beer on the Wall.
 
 Note that not all verses are identical.
 
