@@ -1,5 +1,9 @@
 ## Sample repository for RSpec projects
 
+| Testowanie w Ruby | GitHub Account | Travis CI Status |
+:--:|:--:|:--:
+| [dr Włodzimierz Bzyl](https://github.com/egzamin/tar) | [Włodek Bzyl](https://github.com/wbzyl) | [![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl) |
+
 This repository contains a solution to exercise „Beer Song” downloaded
 from [exercism.io](http://exercism.io):
 ```sh
@@ -14,8 +18,6 @@ bundle install --path vendor/bundle
 * [How to use Travis CI with GitHub hosted repository](https://docs.travis-ci.com/user/getting-started/).
 * [Embedding Status Images](https://docs.travis-ci.com/user/status-images/) –
   also known as badges or icons that show the status of your build into your README or website.
-
-[![Build Status](https://travis-ci.org/my-rspec/hello-rspec-wbzyl.svg?branch=master)](https://travis-ci.org/my-rspec/hello-rspec-wbzyl)
 
 
 ## Beer Song
