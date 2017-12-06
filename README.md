@@ -53,6 +53,7 @@ and maintainability data throughout the development workflow.
     ([Dashboard](https://codeclimate.com/dashboard))
   - [Travis CI Test Coverage Example](https://docs.codeclimate.com/v1.0/docs/travis-ci-test-coverage)
 * [Missing Settings Link](https://docs.codeclimate.com/v1.0/docs/missing-settings-link)?
+  Re-sync Manually.
 
 
 ## Beer Song
