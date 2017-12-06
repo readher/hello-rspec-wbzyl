@@ -1,28 +1,80 @@
-## Sample repository for RSpec projects
+require_relative '../lib/beer_song.rb'
 
-This repository contains a solution to exercise „Beer Song” downloaded
-from [exercism.io](http://exercism.io):
-```sh
-exercism fetch ruby beer-song
-```
+RSpec.describe Bottles do
+  let(:bottles) { described_class.new }
 
-Download gems to local folder _vendor/bundle_:
-```sh
-bundle install --path vendor/bundle
-```
+  describe '#verse' do
+    it 'returns the first verse correctly' do
+      expected = <<-VERSE
+99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.
+VERSE
+      expect(expected).to eq(bottles.verse(99))
+    end
 
-* [How to use Travis CI with GitHub hosted repository](https://docs.travis-ci.com/user/getting-started/).
-* [Embedding Status Images](https://docs.travis-ci.com/user/status-images/) –
-  also known as badges or icons that show the status of your build into your README or website.
+    it 'returns another verse correctly' do
+      expected = <<-VERSE
+89 bottles of beer on the wall, 89 bottles of beer.
+Take one down and pass it around, 88 bottles of beer on the wall.
+VERSE
+      expect(expected).to eq(bottles.verse(89))
+    end
 
+    it 'returns before the penultimate verse correctly' do
+      expected = <<-VERSE
+2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+VERSE
+      expect(expected).to eq(bottles.verse(2))
+    end
 
-## Beer Song
+    it 'returns the penultimate verse correctly' do
+      expected = <<-VERSE
+1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+VERSE
+      expect(expected).to eq(bottles.verse(1))
+    end
 
-Produce the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.
+    it 'returns the last verse correctly' do
+      expected = <<-VERSE
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.
+VERSE
+      expect(expected).to eq(bottles.verse(0))
+    end
+  end
 
-Note that not all verses are identical.
+  describe '#verses' do
+    it 'returns a couple of verses' do
+      expected = <<-VERSES
+99 bottles of beer on the wall, 99 bottles of beer.
+Take one down and pass it around, 98 bottles of beer on the wall.
 
-```plain
+98 bottles of beer on the wall, 98 bottles of beer.
+Take one down and pass it around, 97 bottles of beer on the wall.
+VERSES
+      expect(expected).to eq(bottles.verses(99, 98))
+    end
+
+    it 'returns a few verses' do
+      expected = <<-VERSES
+2 bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottle of beer on the wall.
+
+1 bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.
+VERSES
+      expect(expected).to eq(bottles.verses(2, 0))
+    end
+  end
+
+  describe '#song' do
+    it 'returns the whole song' do
+      expected = <<-SONG
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
@@ -322,51 +374,8 @@ Take it down and pass it around, no more bottles of beer on the wall.
 
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
-```
-
-## For bonus points
-
-Did you get the tests passing and the code clean? If you want to, these
-are some additional things you could try:
-
-* Remove as much duplication as you possibly can.
-* Optimize for readability, even if it means introducing duplication.
-* If you've removed all the duplication, do you have a lot of
-  conditionals? Try replacing the conditionals with polymorphism, if it
-  applies in this language. How readable is it?
-
-Then please share your thoughts in a comment on the submission. Did this
-experiment make the code better? Worse? Did you learn anything from it?
-
-* * * *
-
-For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/ruby).
-
-For running the tests provided, you will need the Minitest gem. Open a
-terminal window and run the following command to install minitest:
-
-    gem install minitest
-
-If you would like color output, you can `require 'minitest/pride'` in
-the test file, or note the alternative instruction, below, for running
-the test file.
-
-In order to run the test, you can run the test file from the exercise
-directory. For example, if the test suite is called
-`hello_world_test.rb`, you can run the following command:
-
-    ruby hello_world_test.rb
-
-To include color from the command line:
-
-    ruby -r minitest/pride hello_world_test.rb
-
-
-## Source
-
-Learn to Program by Chris Pine [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
-
-## Submitting Incomplete Solutions
-
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+SONG
+      expect(expected).to eq(bottles.song)
+    end
+  end
+end
