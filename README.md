@@ -55,6 +55,12 @@ and maintainability data throughout the development workflow.
 * [Missing Settings Link](https://docs.codeclimate.com/v1.0/docs/missing-settings-link)?
   Re-sync Manually.
 
+Być może wystarczy zainstalować rozszerzenie „Code Climate” do przeglądarki
+Firefox lub Chrome:
+
+* [Code quality and test coverage feedback
+without ever leaving GitHub](https://codeclimate.com/browser-extension).
+
 
 ## Beer Song
 
