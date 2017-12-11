@@ -10,6 +10,13 @@ from [exercism.io](http://exercism.io):
 exercism fetch ruby beer-song
 ```
 
+TODO:
+
+* Add [Coverity](https://scan.coverity.com/projects/my-rspec-hello-rspec-wbzyl?tab=project_settings) badge;
+* Download and install the Coverity [Scan Build Tool for PHP/Python/Ruby](https://scan.coverity.com/download?tab=other)
+
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/14591/badge.svg)](https://scan.coverity.com/projects/my-rspec-hello-rspec-wbzyl)
+
 
 ## Integration with Travis
 
